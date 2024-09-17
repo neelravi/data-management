@@ -24,6 +24,16 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material
+      - run: |
+          pip install mkdocs-material
+          pip install mkdocs-get-deps
+          pip install mkdocs-git-authors-plugin
+          pip install mkdocs-git-committers-plugin-2
+          pip install mkdocs-git-revision-date-localized-plugin
+          pip install mkdocs-glightbox
+          pip install mkdocs-material-extensions
+          pip install mkdocs-minify-plugin
+          pip install mkdocs-redirects
+          pip install mkdocs-rss-plugin
       - run: cd documentation && mkdocs build
       - run: mkdocs gh-deploy --force

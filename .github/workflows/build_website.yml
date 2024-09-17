@@ -21,7 +21,5 @@ jobs:
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
       - run: |
           pip install mkdocs-material
-          pip install mkdocs-git-committers-plugin-2
-          pip install mkdocs-git-revision-date-localized-plugin
           cd documentation
           mkdocs gh-deploy --force

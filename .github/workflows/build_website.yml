@@ -20,6 +20,6 @@ jobs:
           python-version: 3.x
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
       - run: |
-          pip install mkdocs-material git-committers
+          pip install mkdocs-material
           cd documentation
-          mkdocs serve
+          mkdocs gh-deploy --force

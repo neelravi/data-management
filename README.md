@@ -4,6 +4,8 @@ Author: [Dr. Ravindra Shinde](https://www.ravindrashinde.com)
 
 License: [MIT License](https://opensource.org/licenses/MIT)
 
+Documentation Website: [Website](https://neelravi.github.io/data-management/)
+
 This repository contains a template for a data management plan for computational research. The data management plan is a document that outlines how data will be managed during a research project and after it is completed. It is a living document that should be updated as the project progresses and as new data management needs arise.
 
 This DMP follows the FAIR principles for data management: data should be Findable, Accessible, Interoperable, and Reusable. The DMP is organized into the following sections:
@@ -23,7 +25,6 @@ Data will be organized into the following directories:
 
 ``` yaml
 /home/user/
-.
 ├── audios
 │   ├── dataA
 │   │   ├── annotations

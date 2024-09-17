@@ -8,6 +8,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: github.event.repository.fork == false
     steps:
       - uses: actions/checkout@v4
       - name: Configure Git Credentials
@@ -19,21 +20,7 @@ jobs:
           python-version: 3.x
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
       - uses: actions/cache@v4
-        with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
       - run: |
-          pip install mkdocs-material
-          pip install mkdocs-get-deps
-          pip install mkdocs-git-authors-plugin
-          pip install mkdocs-git-committers-plugin-2
-          pip install mkdocs-git-revision-date-localized-plugin
-          pip install mkdocs-glightbox
-          pip install mkdocs-material-extensions
-          pip install mkdocs-minify-plugin
-          pip install mkdocs-redirects
-          pip install mkdocs-rss-plugin
-      - run: cd documentation && mkdocs build
-      - run: mkdocs gh-deploy --force
+          pip install mkdocs-material git-committers
+          cd documentation
+          mkdocs serve

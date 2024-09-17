@@ -101,11 +101,11 @@ theme:
 
 # Plugins
 plugins:
-  - blog
+  # - blog
   - git-committers:
       repository: neelravi/data-management
       branch: main
-  - git-authors
+  # - git-authors
   - social
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'

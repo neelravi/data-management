@@ -1,0 +1,71 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+{% extends "main.html" %}
+{% block tabs %}
+  {{ super() }}
+  <style>
+    .md-header { position: initial; }
+    .md-main__inner { margin: 0; }
+    .md-content { display: none; }
+    @media screen and (min-width: 60em) { .md-sidebar--secondary { display: none; } }
+    @media screen and (min-width: 76.25em) { .md-sidebar--primary { display: none; } }
+
+    .parallax {
+      position: relative;
+      overflow: hidden;
+      height: 100vh;
+      background: #000;
+    }
+
+    .parallax__layer {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      will-change: transform;
+    }
+
+    .parallax__layer img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+  <section class="mdx-container">
+
+    <div class="mdx-hero md-grid md-typeset">
+      <div class="mdx-hero">
+        <div class="mdx-hero__content">
+          <h1>Data management for computational research</h1>
+          <p>{{ config.site_description }}. </p>
+          <p>This DMP follows the FAIR principles for data management: data should be Findable, Accessible, Interoperable, and Reusable. The DMP includes information about the data that will be generated during the project, how it will be organized, stored, and backed up, and how it will be shared with others.</p>
+          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+            Quick start
+          </a>
+          <a href="{{ 'zenodo/' | url }}" title="CHAMP (EU) Zenodo Repository" class="md-button">
+            Latest release
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="assets/javascripts/bundle.d249fdc4.min.js"></script>
+  <script src="assets/javascripts/timeago.min.js"></script>
+  <script src="assets/javascripts/timeago_mkdocs_material.js"></script>
+  <script src="assets/javascripts/custom.b146ea9b.min.js"></script>
+  <script>
+    document.addEventListener('scroll', function() {
+      const scrolled = window.pageYOffset;
+      document.querySelectorAll('.parallax__layer').forEach(function(layer) {
+        const depth = layer.style.getPropertyValue('--parallax-depth');
+        const movement = -(scrolled * depth);
+        layer.style.transform = `translateY(${movement}px)`;
+      });
+    });
+  </script>
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}

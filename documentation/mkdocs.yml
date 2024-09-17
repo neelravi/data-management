@@ -1,0 +1,319 @@
+# Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+
+# Project information
+site_name: FAIR Data Management for Computational Research
+site_url: https://localhost/data-management/
+site_author: Dr. Ravindra Shinde
+site_description: |
+  The website and the repository guides on the data management for Computational Physics and Chemistry research for a FAIR storage of raw data, processed data, and metadata.
+
+# Repository
+repo_name: neelravi/data-management
+repo_url: https://github.com/neelravi/data-management
+
+# Copyright
+# copyright: Copyright &copy; 2024 - Ravindra Shinde
+
+copyright: >
+  Copyright &copy; 2024 - – Dr. Ravindra Shinde. <a href="#__consent">Change cookie settings</a>
+
+extra_css:
+  - stylesheets/extra.css
+
+# Configuration
+theme:
+  name: material
+  custom_dir: material/overrides
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+      primary: teal
+      accent: deep orange
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: assets/logo
+  logo: assets/logo.png
+
+# Plugins
+plugins:
+  - blog
+  - git-committers:
+      repository: neelravi/data-management
+      branch: main
+  - git-authors
+  - social
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  # - minify:
+  #     minify_html: true
+
+# Hooks
+hooks:
+  - material/overrides/hooks/shortcodes.py
+  # - material/overrides/hooks/translations.py
+
+# Additional configuration
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.
+  generator: false
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/neelravi/data-management/
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/neelravi/
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/user/neelravi/
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+not_in_nav: |
+  /tutorials/**/*.md
+
+# Page tree
+nav:
+  - Home: index.md
+  - Getting started:
+    - Installation: getting-started.md
+    - License: license.md
+  - Audio:
+    - audios/README.md
+  - Calculations:
+    - calculations/README.md
+    - Collaborations:
+      - calculations/collaborations/README.md
+    - Grants:
+      - calculations/grants/README.md
+    - Materials:
+      - calculations/materials/README.md
+      - 000000-Silicon:
+        - calculations/materials/000000-silicon/README.md
+        - common: calculations/materials/000000-silicon/common/README.md
+        - 00-Relaxation: calculations/materials/000000-silicon/00-relaxation/README.md
+        - 01-DFT: calculations/materials/000000-silicon/01-DFT/README.md
+        - 02-HSE: calculations/materials/000000-silicon/02-HSE/README.md
+        - 03-post-dft: calculations/materials/000000-silicon/03-post-DFT/README.md
+      - 000001-CdGeSb2:
+        - calculations/materials/000001-CdGeSb2/README.md
+        - common: calculations/materials/000001-CdGeSb2/common/README.md
+        - 00-Relaxation: calculations/materials/000001-CdGeSb2/00-relaxation/README.md
+        - 01-DFT: calculations/materials/000001-CdGeSb2/01-DFT/README.md
+        - 02-HSE: calculations/materials/000001-CdGeSb2/02-HSE/README.md
+        - 03-post-dft: calculations/materials/000001-CdGeSb2/03-post-DFT/README.md
+    - Molecules:
+      - calculations/molecules/README.md
+      - 000000-caffeine:
+        - calculations/molecules/000000-caffeine/README.md
+        - common: calculations/molecules/000000-caffeine/common/README.md
+        - 00-HF: calculations/molecules/000000-caffeine/00-HF/README.md
+        - 01-optimization: calculations/molecules/000000-caffeine/01-optimization/README.md
+        - 02-VMC: calculations/molecules/000000-caffeine/02-VMC/README.md
+        - 03-DMC: calculations/molecules/000000-caffeine/03-DMC/README.md
+      - 000001-C13H18O2:
+        - calculations/molecules/000001-C13H18O2/README.md
+        - common: calculations/molecules/000001-C13H18O2/common/README.md
+        - 00-HF: calculations/molecules/000001-C13H18O2/00-HF/README.md
+        - 01-optimization: calculations/molecules/000001-C13H18O2/01-optimization/README.md
+        - 02-VMC: calculations/molecules/000001-C13H18O2/02-VMC/README.md
+        - 03-DMC: calculations/molecules/000001-C13H18O2/03-DMC/README.md
+  - Containers:
+    - containers/README.md
+  - Datasets:
+    - datasets/README.md
+    - 4TU:
+      - datasets/4TU/dataset-4tu-paper-001/README.md
+      - datasets/4TU/dataset-4tu-paper-002/README.md
+    - Zenodo:
+      - datasets/zenodo/dataset-zenodo-paper-003/README.md
+      - datasets/zenodo/dataset-zenodo-paper-004/README.md
+    - Materials Cloud:
+      - datasets/materials-cloud/dataset-materials-cloud-paper-005/README.md
+  - Authoring:
+    - authoring/README.md
+    - Book Chapters:
+      - authoring/book-chapters/README.md
+    - Books:
+      - authoring/books/README.md
+    - Disseration:
+      - authoring/dissertation/README.md
+    - Manuscripts:
+      - authoring/manuscripts/README.md
+    - Papers:
+      - authoring/papers/README.md
+    - Presentations:
+      - authoring/presentations/README.md
+    - Proposals:
+      - authoring/proposals/README.md
+    - Reports:
+      - authoring/reports/README.md
+    - Teaching:
+      - authoring/teaching/README.md
+    - Thesis:
+      - authoring/thesis/README.md
+    - Tutorials:
+      - authoring/tutorials/README.md
+  - Reviewing:
+    - reviewing/README.md
+    - Book Chapters:
+      - reviewing/book-chapters/README.md
+    - Books:
+      - reviewing/books/README.md
+    - Disseration:
+      - reviewing/dissertation/README.md
+    - Grants:
+      - reviewing/grants/README.md
+    - Papers:
+      - reviewing/papers/README.md
+    - Reports:
+      - reviewing/reports/README.md
+    - Thesis:
+      - reviewing/thesis/README.md
+  - Editing:
+    - editing/README.md
+    - Book Chapters:
+      - editing/book-chapters/README.md
+    - Books:
+      - editing/books/README.md
+    - Journals:
+      - editing/journals/README.md
+  - Environments:
+    - environments/README.md
+  - Codes:
+    - codes/README.md
+    - Libraries:
+      - codes/libraries/README.md
+    - Scripts:
+      - codes/scripts/README.md
+    - Development:
+      - codes/devel/README.md
+    - Packages:
+      - codes/packages/README.md
+    - Tools:
+      - codes/tools/README.md
+  - Videos:
+    - Videos/README.md
+  - Contribute:
+    - Contributing:
+      - contributing/index.md
+      - Reporting a bug: contributing/reporting-a-bug.md

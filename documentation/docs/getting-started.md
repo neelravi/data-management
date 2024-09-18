@@ -8,9 +8,6 @@ This repository contains a template for a Data Management Plan (DMP) for computa
 
 This DMP follows the FAIR principles for data management: data should be Findable, Accessible, Interoperable, and Reusable. The DMP includes information about the data that will be generated during the project, how it will be organized, stored, and backed up, and how it will be shared with others.
 
-## TODO:
-
-- [ ] Automatic generation of docx and pdf files from selection of funding agency and the archival repository.
 
 ## Organization of the data
 

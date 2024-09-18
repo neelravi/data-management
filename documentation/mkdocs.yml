@@ -315,3 +315,4 @@ nav:
     - Contributing:
       - contributing/index.md
       - Reporting a bug: contributing/reporting-a-bug.md
+      - Roadmap: contributing/roadmap.md

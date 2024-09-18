@@ -9,6 +9,7 @@ our [documentation] – yielding value to both new and experienced users.
 
   [discussion board]: https://github.com/neelravi/data-management/discussions
   [issue tracker]: https://github.com/neelravi/data-management/issues
+  [report a bug]: https://github.com/neelravi/data-management/issues
   [documentation]: https://neelravi.github.io/data-management/
 
 ## How you can contribute

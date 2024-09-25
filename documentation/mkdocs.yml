@@ -203,6 +203,8 @@ nav:
       - calculations/collaborations/README.md
     - Grants:
       - calculations/grants/README.md
+    - Projects:
+      - calculations/projects/README.md
     - Materials:
       - calculations/materials/README.md
       - 000000-Silicon:

@@ -7,6 +7,7 @@ venv
 # Build files
 build
 site
+documentation/site/
 
 # Distribution files
 dist

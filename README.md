@@ -147,6 +147,10 @@ Data will be organized into the following directories:
 │   │   │   │   └── README.md
 │   │   │   └── README.md
 │   │   └── README.md
+│   ├── projects
+│   │   ├── andrea-zen -> ../molecules/000001-C13H18O2
+│   │   ├── fugaku-2024 -> ../molecules/000000-caffeine
+│   │   └── README.md
 │   └── README.md
 ├── codes
 │   ├── devel

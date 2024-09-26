@@ -98,29 +98,6 @@
     </div>
     <div data-md-component="announce">
       
-        <aside class="md-banner">
-          <div class="md-banner__inner md-grid md-typeset">
-            
-              <button class="md-banner__button md-icon" aria-label="Don't show this again">
-                
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-              </button>
-            
-            
-  We are also available on
-  <a rel="me" href="https://hub.docker.com/r/neelravi/champ">
-    <span class="twemoji docker">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/></svg>
-    </span>
-    <strong>Docker Hub</strong>
-  </a>
-
-          </div>
-          
-            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
-          
-        </aside>
-      
     </div>
     
     
@@ -541,59 +518,102 @@
           
         
       
+  <link rel=stylesheet href=assets/stylesheets/main.fd1ad6e4.min.css>
+  <link rel=stylesheet href=assets/stylesheets/palette.ab4e12ef.min.css>
+  <link rel=stylesheet href=assets/stylesheets/custom.cc92020d.min.css>
+  <link rel=stylesheet href=assets/stylesheets/home.ac698b0a.min.css>
+  <link rel=stylesheet href=assets/stylesheets/timeago.css>
+  <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+  <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
   <style>
-    .md-header { position: initial; }
-    .md-main__inner { margin: 0; }
-    .md-content { display: none; }
-    @media screen and (min-width: 60em) { .md-sidebar--secondary { display: none; } }
-    @media screen and (min-width: 76.25em) { .md-sidebar--primary { display: none; } }
-
-    .parallax {
-      position: relative;
-      overflow: hidden;
-      height: 100vh;
-      background: #000;
-    }
-
-    .parallax__layer {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-      will-change: transform;
-    }
-
-    .parallax__layer img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+      :root {
+          --md-text-font: "Roboto";
+          --md-code-font: "Roboto Mono"
+      }
   </style>
-  <section class="mdx-container">
+  <div class=md-container data-md-component=container>
+    <div class=mdx-parallax data-mdx-component=parallax>
+        <section class=mdx-parallax__group data-md-color-scheme=slate>
+            <picture class=mdx-parallax__layer style="--md-parallax-depth: 8;--md-image-position: 70%">
+                <source type=image/avif srcset="assets/images/layers/1-landscape.jpg 1280w, assets/images/layers/1-landscape@2x.avif 1920w, assets/images/layers/1-landscape@3x.avif 2560w, assets/images/layers/1-landscape@4x.avif 3840w">
+                <source type=image/webp srcset="assets/images/layers/1-landscape.webp 1280w, assets/images/layers/1-landscape@2x.webp 1920w, assets/images/layers/1-landscape@3x.webp 2560w, assets/images/layers/1-landscape@4x.webp 3840w">
+                <img srcset="assets/images/layers/1-landscape.png 1280w, assets/images/layers/1-landscape@2x.png 1920w, assets/images/layers/1-landscape@3x.png 2560w, assets/images/layers/1-landscape@4x.png 3840w" src=assets/images/layers/1-landscape.png alt class=mdx-parallax__image>
+            </picture>
 
-    <div class="mdx-hero md-grid md-typeset">
-      <div class="mdx-hero">
-        <div class="mdx-hero__content">
-          <h1>Data management for computational research</h1>
-          <p>The website and the repository guides on the data management for Computational Physics and Chemistry research for a FAIR storage of raw data, processed data, and metadata.
-. </p>
-          <p>This DMP follows the FAIR principles for data management: data should be Findable, Accessible, Interoperable, and Reusable. The DMP includes information about the data that will be generated during the project, how it will be organized, stored, and backed up, and how it will be shared with others.</p>
-          <a href="getting-started/" title="Installation" class="md-button md-button--primary">
-            Quick start
-          </a>
-          <a href="zenodo/" title="CHAMP (EU) Zenodo Repository" class="md-button">
-            Latest release
-          </a>
-        </div>
-      </div>
+             <picture class=mdx-parallax__layer style="--md-parallax-depth: 6;--md-image-position: 20%">
+                <source type=image/webp srcset="assets/images/layers/astronaut.png 1280w, assets/images/layers/astronaut.png 1920w, assets/images/layers/astronaut.png 2560w, assets/images/layers/astronaut.png 3840w">
+                <img srcset="assets/images/layers/astronaut.png 1280w, assets/images/layers/astronaut.png 1920w, assets/images/layers/astronaut.png 2560w, assets/images/layers/astronaut.png 3840w" src=assets/images/layers/astronaut.png alt class=mdx-parallax__image>
+            </picture>
+            <div class="mdx-parallax__layer mdx-parallax__blend"></div>
+            <div class=mdx-hero data-mdx-component=hero>
+                <div class="mdx-hero__scrollwrap md-grid">
+                    <div class=mdx-hero__inner>
+                        <div class="mdx-hero__teaser md-typeset">
+                          <h1>Data management for computational research</h1>
+                          <p>The website and the repository guides on the data management for Computational Physics and Chemistry research for a FAIR storage of raw data, processed data, and metadata.
+.</p>
+                          <p >This DMP follows the FAIR principles for data management: data should be Findable, Accessible, Interoperable, and Reusable. The DMP includes information about the data that will be generated during the project, how it will be organized, stored, and backed up, and how it will be shared with others.</p>
+                          <h3 >Project by Dr. Ravindra Shinde</h3>
+                          <a href="getting-started/" title="Installation" class="md-button md-button--primary">
+                            Quick start
+                          </a>
+                          <a href="https://github.com/neelravi/data-management/archive/refs/tags/v1.2.0.tar.gz" title="CHAMP (EU) Zenodo Repository" class="md-button">
+                            Latest release
+                          </a>
+                        </div>
+                        <div class=mdx-hero__more>
+                            <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24">
+                                <path d="M11 4h2v12l5.5-5.5 1.42 1.42L12 19.84l-7.92-7.92L5.5 10.5 11 16z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class=mdx-parallax__group data-md-color-scheme=slate data-md-color-primary=indigo>
+          <div class="md-content md-grid" data-md-component=content>
+          <div class="md-content__inner mdx-content__inner">
+          <div class=mdx-content__column>
+          <header class=md-typeset hidden>
+            <h1 id=become-a-sponsor>
+                Contribute to the project <a href=#contributing class=headerlink title="Permanent link">¶ </a>
+            </h1>
+          </header>
+          <div class="mdx-connect md-typeset" hidden>
+            <div class=mdx-connect__column>
+                <p>
+                    By joining the <a href=contributing/>Insiders</a>
+                    program, you'll get immediate access to the latest features while also helping support the ongoing development of Material for MkDocs. Thanks to our <a href=contributing/#how-you-can-contribute>awesome sponsors</a>
+                    , this project is actively maintained and kept in good shape.
+                </p>
+                <p>
+                    <strong>Together, we can build documentation that simply works! </strong>
+                </p>
+                <p>
+                    <a href=contributing/ class=md-button aria-label=Contribute> Visit </a>
+                </p>
+            </div>
+          </div>
+          </div>
+
+          </div>
+          </div>
+          </div>
+          </section>
+
+
     </div>
-  </section>
-  <script src="assets/javascripts/bundle.d249fdc4.min.js"></script>
+</div>
+
+
+  <!-- <script src="assets/javascripts/bundle.d249fdc4.min.js"></script> -->
+  <script src="assets/javascripts/bundle.c4a99efa.min.js"></script>
   <script src="assets/javascripts/timeago.min.js"></script>
   <script src="assets/javascripts/timeago_mkdocs_material.js"></script>
-  <script src="assets/javascripts/custom.b146ea9b.min.js"></script>
+  <!-- <script src="assets/javascripts/custom.b146ea9b.min.js"></script> -->
+  <script src="assets/javascripts/custom.058c863c.min.js"></script>
   <script>
     document.addEventListener('scroll', function() {
       const scrolled = window.pageYOffset;
@@ -901,6 +921,8 @@
       
         
       
+        
+      
     
     
       
@@ -1075,10 +1097,6 @@
           
         
       
-        
-      
-        
-      
     
     
       
@@ -1096,6 +1114,69 @@
           
           
           <div class="md-nav__link md-nav__container">
+            <a href="calculations/projects/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Projects
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
             <a href="calculations/materials/" class="md-nav__link ">
               
   
@@ -1107,14 +1188,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
             <span class="md-nav__icon md-icon"></span>
             Materials
           </label>
@@ -1167,7 +1248,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5_2" >
         
           
           
@@ -1183,14 +1264,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_4_2" id="__nav_4_4_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_5_2" id="__nav_4_5_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_4_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5_2">
             <span class="md-nav__icon md-icon"></span>
             000000-Silicon
           </label>
@@ -1356,7 +1437,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5_3" >
         
           
           
@@ -1372,14 +1453,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_4_3" id="__nav_4_4_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_5_3" id="__nav_4_5_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_4_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5_3">
             <span class="md-nav__icon md-icon"></span>
             000001-CdGeSb2
           </label>
@@ -1537,7 +1618,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
         
           
           
@@ -1553,14 +1634,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
             <span class="md-nav__icon md-icon"></span>
             Molecules
           </label>
@@ -1613,7 +1694,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6_2" >
         
           
           
@@ -1629,14 +1710,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_5_2" id="__nav_4_5_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_6_2" id="__nav_4_6_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_5_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_5_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6_2">
             <span class="md-nav__icon md-icon"></span>
             000000-caffeine
           </label>
@@ -1802,7 +1883,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6_3" >
         
           
           
@@ -1818,14 +1899,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_5_3" id="__nav_4_5_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_6_3" id="__nav_4_6_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_5_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_5_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6_3">
             <span class="md-nav__icon md-icon"></span>
             000001-C13H18O2
           </label>
@@ -4338,6 +4419,8 @@
       
         
       
+        
+      
     
     
       
@@ -4393,6 +4476,27 @@
   
   <span class="md-ellipsis">
     Reporting a bug
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="contributing/roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roadmap
   </span>
   
 
